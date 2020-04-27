@@ -1,0 +1,210 @@
+body{
+  margin: 0;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #999999;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.hero {
+  background-image: url("img/Rectangle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  padding-top: 174px;
+  padding-bottom: 395px;
+
+}
+
+.company {
+  font-size: 64px;
+  line-height: 95px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+
+}
+
+.buildings {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.advantages {
+  background-color: #F7F7F7;
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+}
+
+.number {
+  font-size: 72px;
+  line-height: 107px;
+  text-align: center;
+  color: #F7654A;
+}
+
+.years {
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+}
+
+.market {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  color: #999999;
+}
+
+.big-projects {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 53px;
+  text-align: center;
+  color: #404149;
+}
+
+.article-title {
+  font-size: 24px;
+  line-height: 36px;
+  color: #404149;
+}
+
+.article-text {
+  font-family: "Open Sans;"
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999
+}
+
+.request {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  background-color: #F7654A; 
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+
+}
+
+.section-text {
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.02em;
+
+}
+
+.your-request {
+  background-color: #FFFFFF;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: #000000;
+
+
+}
+
+.title {
+  font-size: 36px;
+  line-height: 53px;
+  color: #000000;
+}
+
+.section-link {
+  background-color: #F7F7F7;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+
+}
+
+.accordion-button {
+  font-size: 24px;
+  line-height: 36px;
+  color: #F7654A;
+}
+
+.partners {
+  background-color: #404149;
+  font-size: 36px;
+  line-height: 53px;
+  color: #FFFFFF;
+}
+
+.name {
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.organization {
+  font-size: 21px;
+  line-height: 31px;
+  letter-spacing: 0.02em;
+  color: #F7654A;
+}
+
+.contacts-list {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.info-title {
+  color: #999999;
+}
+
+.info-value {
+  text-align: center;
+  color: #000000;
+}
+
+.info-link {
+  color: #F7654A;
+}
+
+.page-footer {
+  background-color:  #404149;
+}
+
+.copyright {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
