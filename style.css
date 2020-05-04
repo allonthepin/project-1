@@ -20,6 +20,34 @@ ul {
   margin: 0; 
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
 .hero {
   background-image: url("img/Rectangle.jpg");
   background-size: cover;
@@ -48,9 +76,16 @@ ul {
 }
 
 .advantages {
-  background-color: #F7F7F7;
   padding-top: 75px;
   padding-bottom: 75px;
+
+}
+
+.advantages .advantages-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 57px 130px;
+  background-color: #F7F7F7;
 
 }
 
@@ -59,6 +94,7 @@ ul {
   line-height: 107px;
   text-align: center;
   color: #F7654A;
+  display: block;
 }
 
 .years {
@@ -66,6 +102,8 @@ ul {
   line-height: 53px;
   text-align: center;
   color: #000000;
+  display: block;
+}
 }
 
 .market {
@@ -73,6 +111,8 @@ ul {
   line-height: 27px;
   text-align: center;
   color: #999999;
+  display: block;
+}
 }
 
 .big-projects {
@@ -87,14 +127,35 @@ ul {
   color: #404149;
 }
 
+.projects-list {
+  display: flex;
+}
+
+.project {
+  margin-right: 30px;
+}
+
+.arena {
+  display: flex;
+  flex-direction: column;
+}
+
+.arena img {
+  order: -1;
+}
+
+
 .article-title {
+  text-transform: none;
+  font-style: normal;
   font-size: 24px;
   line-height: 36px;
   color: #404149;
 }
 
 .article-text {
-  font-family: "Open Sans;"
+  font-family: "Open Sans";
+  text-transform: none;
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
@@ -103,21 +164,28 @@ ul {
 }
 
 .request {
-  margin-top: 150px;
-  margin-bottom: 150px;
   padding-top: 30px;
   padding-bottom: 45px;
   background-color: #F7654A; 
   color: #ffffff;
-  font-weight: bold;
+}
+
+.request .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-title {
+  margin: 0;
   font-size: 48px;
   line-height: 71px;
   letter-spacing: 0.02em;
-
 }
 
 .section-text {
-  padding-top: 20px;
+  margin-bottom: 0;
+  margin-top: 20px;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
@@ -135,26 +203,106 @@ ul {
 
 }
 
+.services .services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .title {
   font-size: 36px;
   line-height: 53px;
   color: #000000;
+  text-align: center
 }
 
 .section-link {
+  display: block;
+  padding: 60px;
   background-color: #F7F7F7;
   font-size: 21px;
   line-height: 31px;
   text-align: center;
   letter-spacing: 0.02em;
   color: #000000;
+  box-sizing: border-box;
 
+}
+
+
+.offices {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  flex-grow: 1;
+}
+
+.offices:nth-child(3n) {
+  margin-right: 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 25%;
+  flex-grow: 1;
+}
+
+.photo img {
+  display: block;
 }
 
 .accordion-button {
   font-size: 24px;
   line-height: 36px;
   color: #F7654A;
+
+}
+
+.review {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.review .title {
+  margin-top:0;
+  margin-bottom: 64px; 
+  
+}
+
+.review-list {
+display: flex;
+}
+
+.review-text {
+  margin-right: 30px;
+}
+
+.review-text:last-child {
+  margin-right: 0
+}
+
+.blockquote-text {
+  background-color: #F7F7F7;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: none;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+.blockquote {
+  margin: 0;
 }
 
 .partners {
@@ -164,8 +312,22 @@ ul {
   color: #FFFFFF;
 }
 
+.our-partners {
+  text-align: center;
+}
+
+.partners-list {
+  display: flex;
+}
+
+.partner {
+  margin-right: 65px;
+}
+
 .name {
   font-size: 21px;
+  font-style: normal;
+  text-transform: none;
   line-height: 31px;
   letter-spacing: 0.02em;
   color: #000000;
@@ -173,6 +335,8 @@ ul {
 
 .organization {
   font-size: 21px;
+  font-style: normal;
+  text-transform: none;
   line-height: 31px;
   letter-spacing: 0.02em;
   color: #F7654A;
