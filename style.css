@@ -40,6 +40,8 @@ ul {
   left: 0;
   right: 0;
   top: 0;
+  padding-top: 30px;
+  padding-bottom: 30px
 }
 
 .page-header .container {
@@ -48,14 +50,19 @@ ul {
 
 }
 
+.menu-button {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+}
+
 .hero {
   background-image: url("img/Rectangle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 720px;
-  padding-top: 174px;
-  padding-bottom: 395px;
-
+  padding: 170px 0;
+  min-height: 740px;
+  box-sizing: border-box;
 }
 
 .company {
@@ -64,10 +71,17 @@ ul {
   text-align: center;
   letter-spacing: 0.02em;
   color: #FFFFFF;
+  margin-left: auto;
+  width: 75%;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-top: 0;
 
 }
 
 .buildings {
+  display: block;
+  margin-top: 25px;
   font-size: 18px;
   line-height: 27px;
   text-align: center;
@@ -76,9 +90,7 @@ ul {
 }
 
 .advantages {
-  padding-top: 75px;
-  padding-bottom: 75px;
-
+  margin-top: -150px;
 }
 
 .advantages .advantages-list {
@@ -104,7 +116,7 @@ ul {
   color: #000000;
   display: block;
 }
-}
+
 
 .market {
   font-size: 18px;
@@ -113,11 +125,11 @@ ul {
   color: #999999;
   display: block;
 }
-}
+
 
 .big-projects {
-  margin-top: 100px;
-  margin-bottom: 150px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .section-title {
@@ -193,14 +205,40 @@ ul {
 
 }
 
-.your-request {
+.button {
+  display: flex;
+  align-items: center;
   background-color: #FFFFFF;
   font-size: 14px;
   line-height: 21px;
   letter-spacing: 0.05em;
   color: #000000;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 
+.button svg {
+  width: 18px;
+  height: 21px;
+  margin-right: 15px;
+  fill: currentColor;
+}
 
+.button:hover,
+.button:focus {
+  background-color: #8c4133;
+  color: #fff;
+}
+
+.button:active {
+  background-color: #8c413399;
+}
+
+.services {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .services .services-list {
@@ -209,6 +247,8 @@ ul {
 }
 
 .title {
+  margin-top: 0;
+  margin-bottom: 60px;
   font-size: 36px;
   line-height: 53px;
   color: #000000;
@@ -225,9 +265,18 @@ ul {
   letter-spacing: 0.02em;
   color: #000000;
   box-sizing: border-box;
-
 }
 
+.section-link::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 40px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url(img/house.svg);
+  background-repeat: no-repeat;
+}
 
 .offices {
   margin-right: 30px;
@@ -252,6 +301,18 @@ ul {
 
 .photo img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+
+.answers {
+  padding-top: 150px;
+  padding-bottom: 150px; 
+}
+
+.answers .title {
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .accordion-button {
@@ -294,12 +355,21 @@ display: flex;
   text-transform: none;
   padding-left: 30px;
   padding-right: 30px;
-  padding-top: 40px;
+  padding-top: 38px;
   padding-bottom: 40px;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
+.blockquote-text::before {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 28px;
+  margin-bottom: 12px;
+  background-image: url(img/sign.svg);
+  background-repeat: no-repeat;
+}
 
 .blockquote {
   margin: 0;
@@ -307,13 +377,18 @@ display: flex;
 
 .partners {
   background-color: #404149;
-  font-size: 36px;
-  line-height: 53px;
   color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .our-partners {
   text-align: center;
+  font-size: 36px;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 60px;
+
 }
 
 .partners-list {
@@ -342,13 +417,66 @@ display: flex;
   color: #F7654A;
 }
 
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.contacts .title {
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
 .contacts-list {
+  display: flex;
+  justify-content: space-between;
   font-size: 24px;
   line-height: 36px;
 }
 
+.contact-text {
+  margin-right: 30px;
+
+}
+
+.contact-text:last-child {
+  margin:0;
+}
+
+.contact-text::before {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.contact-text.address::before {
+  background-image: url(img/address.svg);
+} 
+
+.contact-text.phone::before {
+  background-image: url(img/phone.svg);
+} 
+
+.contact-text.time::before {
+  background-image: url(img/time.svg);
+} 
+
+.contact-text.email::before {
+  background-image: url(img/email.svg);
+} 
+
+
 .info-title {
+  display: block;
   color: #999999;
+  text-align: center;
 }
 
 .info-value {
@@ -356,19 +484,34 @@ display: flex;
   color: #000000;
 }
 
+
+.phone {
+  display: block;
+}
+
+
 .info-link {
   color: #F7654A;
 }
 
 .page-footer {
   background-color:  #404149;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .copyright {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
+  text-transform: none;
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
+  margin: 0;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
 }
